@@ -9,10 +9,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.77.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Augusto-C2304/clone_disney.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Augusto-C2304/clone_disney/issues"
+  },
+  "homepage": "https://github.com/Augusto-C2304/clone_disney#readme",
+  "description": ""
 }
