@@ -1,10 +1,6 @@
-@use '_hero';
+@use 'variaveis';
+@use 'hero';
 
-
-// cores
-$corDeFundo: #040714;
-$corTextoPrincipal:silver;
-$cotTextoSecundaria: #f9f9f9;
 
 * {
     margin: 0;
@@ -13,18 +9,18 @@ $cotTextoSecundaria: #f9f9f9;
 }
 
 body {
-    background-color: $corDeFundo;
+    background-color: variaveis.$corDeFundo;
 }
 
 @mixin text($fontSize: 16px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    color: $corTextoPrincipal;
+    color: variaveis.$corTextoPrincipal;
 }
 
 @mixin title($fontSize: 28px) {
     @include text($fontSize);
-    color: $cotTextoSecundaria;
+    color: variaveis.$cotTextoSecundaria;
 }
 
 .text--big{
@@ -53,6 +49,6 @@ body {
 
 .link-text {
     @include text(18px);
-    color: $cotTextoSecundaria;
+    color: variaveis.$cotTextoSecundaria;
     text-decoration: underline;
 }
